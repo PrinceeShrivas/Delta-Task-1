@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="TASK1.CSS">
+
+</head>
+
+<body>
+  <div class="main">
+    
+    
+     
+    
+
+    <svg width="5000" height="5000" style="background-color:rgba(41,45,53,255);">
+      <!-- Outer Hexagon (600px side) -->
+      <path d="M1600,1000 
+                     L1300,1519.6 
+                     L700,1519.6 
+                     L400,1000 
+                     L700,480.4 
+                     L1300,480.4 Z" fill="none" stroke="white" stroke-width="5" />
+
+      <!--  Hexagon (400px side) -->
+      <path d="M1400,1000 
+                     L1200,1346.4 
+                     L800,1346.4 
+                     L600,1000 
+                     L800,653.6 
+                     L1200,653.6 Z" fill="none" stroke="white" stroke-width="5" />
+
+
+      <!--  Hexagon (200px side) -->
+      <path d="M1200,1000 
+                     L1100,1173.2 
+                     L900,1173.2 
+                     L800,1000 
+                     L900,826.8 
+                     L1100,826.8 Z" fill="none" stroke="white" stroke-width="5" />
+      <!-- Text for Outer Hexagon -->
+      <text x="1410" y="1259.8" fill="white" font-size="50">1</text>
+      <text x="1000" y="1500.6" fill="white" font-size="50">1</text>
+      <text x="570" y="1259.8" fill="white" font-size="50">3</text>
+      <text x="570" y="760" fill="white" font-size="50">2</text>
+      <text x="1000" y="530" fill="white" font-size="50">1</text>
+      <text x="1410" y="760" fill="white" font-size="50">2</text>
+
+      <!-- Text for Middle Hexagon -->
+      <text x="1260" y="1173.2" fill="white" font-size="50">5</text>
+      <text x="1000" y="1330.4" fill="white" font-size="50">6</text>
+      <text x="720" y="1173.2" fill="white" font-size="50">4</text>
+      <text x="720" y="845.8" fill="white" font-size="50">5</text>
+      <text x="1000" y="700.6" fill="white" font-size="50">6</text>
+      <text x="1260" y="845.8" fill="white" font-size="50">4</text>
+
+      <!-- Text for Inner Hexagon -->
+      <text x="1110" y="1086.6" fill="white" font-size="50">8</text>
+      <text x="1000" y="1155.2" fill="white" font-size="50">8</text>
+      <text x="870" y="1086.6" fill="white" font-size="50">9</text>
+      <text x="870" y="935.4" fill="white" font-size="50">8</text>
+      <text x="1000" y="870.8" fill="white" font-size="50">8</text>
+      <text x="1110" y="935.4" fill="white" font-size="50">9</text>
+
+      <!-- Connecting Lines (Outer to Middle Hexagon) -->
+      <line x1="1300" y1="480.4" x2="1200" y2="653.6" stroke="white" stroke-width="5" />
+      <text x="1270" y="600" fill="white" font-size="50">1</text> <!-- Right top -->
+
+      <line x1="400" y1="1000" x2="600" y2="1000" stroke="white" stroke-width="5" />
+      <text x="500" y="980" fill="white" font-size="50">1</text> <!-- Bottom -->
+
+      <line x1="1300" y1="1519.6" x2="1200" y2="1346.4" stroke="white" stroke-width="5" />
+      <text x="1200" y="1460" fill="white" font-size="50">1</text> <!-- Center -->
+
+      <!-- Connecting Lines (Middle to Inner Hexagon) -->
+      <line x1="1400" y1="1000" x2="1200" y2="1000" stroke="white" stroke-width="5" />
+      <text x="1275   " y="980" fill="white" font-size="50">1</text> <!-- Top -->
+
+      <line x1="800" y1="653.6" x2="900" y2="826.8" stroke="white" stroke-width="5" />
+      <text x="870" y="740" fill="white" font-size="50">1</text> <!-- Left bottom -->
+
+      <line x1="800" y1="1346.4" x2="900" y2="1173.2" stroke="white" stroke-width="5" />
+      <text x="810" y="1260" fill="white" font-size="50">1</text> <!-- Right bottom -->
+
+
+      <circle class="circle rcle outbutt outbutt1" cx="1600" cy="1000" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle outbutt outbutt2" cx="1300" cy="1519.6" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle outbutt outbutt3" cx="700" cy="1519.6" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle outbutt outbutt4" cx="400" cy="1000" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle outbutt outbutt5" cx="700" cy="480.4" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle outbutt outbutt6" id="jojo" cx="1300" cy="480.4" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+
+      <!-- 🟡 Middle Hexagon Circles -->
+      <circle class="circle midbutt midbutt1" cx="1400" cy="1000" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle midbutt midbutt2" cx="1200" cy="1346.4" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle midbutt midbutt3" cx="800" cy="1346.4" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle midbutt midbutt4" cx="600" cy="1000" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle midbutt midbutt5" cx="800" cy="653.6" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle midbutt midbutt6" cx="1200" cy="653.6" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+
+      <!-- 🔴 Inner Hexagon Circles -->
+      <circle class="circle inbutt inbutt1" cx="1200" cy="1000" r="25" fill="#444545" stroke="white" stroke-width="5" />
+      <circle class="circle inbutt inbutt2" cx="1100" cy="1173.2" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle inbutt inbutt3" cx="900" cy="1173.2" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+      <circle class="circle inbutt inbutt4" cx="800" cy="1000" r="25" fill="#444545" stroke="white" stroke-width="5" />
+      <circle class="circle inbutt inbutt5" cx="900" cy="826.8" r="25" fill="#444545" stroke="white" stroke-width="5" />
+      <circle class="circle inbutt inbutt6" cx="1100" cy="826.8" r="25" fill="#444545" stroke="white"
+        stroke-width="5" />
+        
+
+
+    </svg>
+
+  </div>
+
+
+  
+  <script src="TASK1.JS">
+    
+  </script>
+  
+  
+  
+  
+
+
+</body>
+
+</html>
